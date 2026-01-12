@@ -1,113 +1,144 @@
-📱 Learning App – Flutter Machine Test
 
-A modern learning platform built using Flutter + GetX, based on the provided Figma design and API integration.
+
+# 📱 Learning App – Flutter Machine Test
+
+A modern **learning application** built using **Flutter + GetX**, developed by converting the provided **Figma design** into a fully functional app with **REST API integration** and **dynamic UI**.
 
 This project demonstrates:
 
-Pixel-perfect UI from Figma
+* Pixel-perfect UI from Figma
+* GetX state management & navigation
+* API-driven learning modules
+* Onboarding flow
+* Video streaming
+* Learning streak visualization
 
-GetX state management and navigation
+---
 
-REST API integration
+## 🚀 Features
 
-Dynamic learning dashboard
+### 🔹 Onboarding
 
-Onboarding flow
+* Two-screen onboarding flow
+* Skip & Next navigation
+* Onboarding completion stored using **GetStorage**
+* Auto-redirects to Home after completion
 
-Video streaming
+### 🔹 Home Dashboard
 
-Learning streak visualization
+* Greeting header with notifications
+* Popular Courses (KTET, HST, CUET, LPST, GENERAL PSC)
+* Active Course Card
 
-🚀 Features
-🔹 Onboarding
+  * Circular progress
+  * Completed tests
+  * Continue & Shift course buttons
+* Promo banner
 
-Two-screen onboarding flow
+### 🔹 Course & Video Module
 
-Skip and Next navigation
+* API-based video list
+* Video status: Completed, In-Progress, Locked
+* Video player screen with:
 
-Onboarding completion stored using GetStorage
+  * Play / Pause
+  * Progress tracking
+  * Download icon
+  * Title & description
 
-Auto-redirect to Home on next launch
+### 🔹 Learning Streak
 
-🔹 Home Dashboard
+* Zig-zag streak path UI
+* Completed, current & locked days
+* Today’s topic card
+* Fully API driven
 
-Greeting header with notification icon
+---
 
-Popular Courses (KTET, HST, CUET, LPST, GENERAL PSC)
+## 🔌 APIs Used
 
-Active Course card with:
+### Video Details
 
-Progress ring
-
-Completed tests
-
-Continue & Shift course buttons
-
-Promo banner
-
-🔹 Course & Video Module
-
-API driven video list
-
-Locked, in-progress, and completed states
-
-Video player screen with:
-
-Play / Pause
-
-Progress
-
-Download icon
-
-Course title
-
-🔹 Learning Streak
-
-Zig-zag streak path UI
-
-Current day highlight
-
-Completed & locked day indicators
-
-“Today’s Topic” card
-
-Data loaded from API
-
-🔌 APIs Used
-📌 Video List
+```
 https://trogon.info/task/api/video_details.php
+```
 
-📌 Streak
+### Learning Streak
+
+```
 https://trogon.info/task/api/streak.php
+```
 
-🛠 Tech Stack
-Technology	Usage
-Flutter	UI & App Logic
-GetX	State management & Navigation
-GetStorage	Onboarding persistence
-REST API	Dynamic data
-CustomPainter	Streak path drawing
-🗂 Project Structure
+---
+
+## 🛠 Tech Stack
+
+| Technology    | Usage                         |
+| ------------- | ----------------------------- |
+| Flutter       | UI & App Logic                |
+| GetX          | State management & navigation |
+| GetStorage    | Onboarding persistence        |
+| REST API      | Dynamic data                  |
+| CustomPainter | Streak path UI                |
+
+---
+
+## 🗂 Project Structure
+
+```
 lib/
 ├── controllers/
 ├── models/
 ├── home/
-│   ├── widgets/
+│   └── widgets/
 ├── onboarding/
 ├── video/
 ├── streak/
 ├── app/
 │   ├── routes.dart
-│   ├── storage.dart
+│   └── storage.dart
+```
 
-▶ How to Run
+---
+
+## ▶ How to Run
+
+```bash
 flutter pub get
 flutter run
+```
 
-📦 Build APK
+---
+
+## 📦 Build APK
+
+```bash
 flutter build apk --release
-
+```
 
 APK location:
 
+```
 build/app/outputs/flutter-apk/app-release.apk
+```
+
+---
+
+## 📸 Screens Implemented
+
+* Onboarding
+* Home Dashboard
+* Popular Courses
+* Active Course
+* Video Player
+* Learning Streak Path
+
+---
+
+## 👩‍💻 Developer
+
+**Sreeshna C**
+Mobile Developer
+GitHub: [https://github.com/Sreashna](https://github.com/Sreashna)
+
+
